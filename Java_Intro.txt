@@ -1,0 +1,201 @@
+Java:
+====
+
+Programming Lang:
+Set of Instructions.
+
+
+LOW LEVEL LANG
+ASM
+
+ADD   A,B
+STORE  C
+
+---------------
+C - Lang 
+C++ ,Java lang , python
+
+int rollno = 99;
+
+findMaxOfNumbers()
+{
+
+
+}
+
+
+Software:
+Set of programs = software
+
+Types of Softwares:
+-------------------
+1. Console / Desktop Applications
+Ex: Notepad,MS-Office ,O.S , Paint , Eclipse IDE etc
+
+2. Web Applications
+They run On Web Servers/Web Host and need internet to access by the clients/browser
+Ex: All websites , Gmail, google, Flipkart, University WEbsite
+
+3. Mobile Applications
+Ex: Wats App, Flipkart App, Games
+
+
+======================================================
+Java 
+
+
+Web Application, AI , ML , IOT, Blockchain,Security , Big Data,Hadoop, Salesforce,Cloud Computing,
+Devops, Jenkins, Android , PEGA etc
+
+
+JSE - JAVA STANDARD EDITION
+CORE JAVA
+Console /desktop  Application
+
+JEE - JAVA ENTERPRISE EDITION
+ADV JAVA
+Web Applications / Websites
+
+JME - JAVA MICRO/MOBILE  EDITION
+ANDROID
+
+
+JAVA FEATURES:
+===============
+1. Object Oriented Programming lang
+2. Platform Independent
+3. Secure
+4. Multi-Threading
+5. Robust
+
+Naming Convections in Java:
+---------------------------
+
+packages:
+
+lower case:  
+	java.lang
+	java.util
+	java.io
+
+	com.app
+	demo.pack123
+
+syntax: domain.company.project.module.submodule
+
+com.starhealth.lifeinsurance.policy.customer
+
+com.flipkart.ekart.customer.login
+
+ekart.customer.login
+
+
+java.lang
+java.util
+java.util.regex
+
+
+
+Interface and Class:
+====================
+InitCap
+
+Object 
+String
+System
+Scanner
+Math
+
+Demo
+Student
+Employee
+EmployeeService
+StudentDemo
+
+
+Constructor:
+============
+Same as Class name InitCap
+
+Demo  --> Demo()
+Student --> Student()
+
+Variables and Methods:
+------------------------
+Camel-Case
+
+int balance$;
+account
+accountNumber
+studentName
+
+
+setStudent()
+account123()
+accountDetails();
+
+
+final variables:
+-----------------
+ALL UPPERCASE
+
+TOKEN_NUMBER;
+
+IFSC;
+
+PI_VALUE;
+
+
+$ , _ 
+
+
+
+=========================
+Data Types in Java
+
+
+ int 	x = 33 ;
+
+Variable:
+Its a place holder or name given to the memory block where our data get store.
+
+
+1. premitive data type
+PDT         Size in Bytes    DefaultValue    Wrapper Class
+----------------------------------------------------------
+byte		1 byte	     0			Byte
+
+short          2 bytes       0			Short
+		
+char		2 bytes      single space      Character
+	
+int		4 bytes      0			Integer
+
+long		8 bytes      0			Long
+	
+float      	4 bytes     0.0f		Float
+
+double          8 bytes     0.0			Double
+
+boolean         true/false    false		Boolean
+
+
+
+
+2. reference data type  / non-primitive d.t
+
+String s1 ;
+
+Demo d ;
+
+Object o;
+
+System s;
+
+Note: Default value for non-primitive d.t is null
+
+
+
+
+
+  
