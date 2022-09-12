@@ -1,0 +1,20 @@
+package com.instance;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+
+		
+		Student  s1 = new Student(101,"javeed",5000);
+		
+		
+			Student s = new Student(
+		
+		Student s2 = new Student();
+		
+		
+
+	}
+
+}

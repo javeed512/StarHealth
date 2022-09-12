@@ -1,0 +1,24 @@
+package com.instance;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+
+		
+		Student  s1 = new Student();
+		
+			s1.sid = 101;
+			s1.sname = "javeed";
+			s1.fee = 9000;
+		
+		System.out.println(s1.sid +" "+s1.sname+" "+s1.fee);
+		
+		
+		Student s2 = new Student();
+		
+		
+
+	}
+
+}

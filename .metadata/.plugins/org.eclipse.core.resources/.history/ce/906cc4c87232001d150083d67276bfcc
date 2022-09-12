@@ -1,0 +1,17 @@
+package com.instance;
+
+public class Student extends Object{
+	
+	
+	int sid;   // 0
+	String sname;  // null
+	double  fee;  // 0.0
+	
+	
+	public Student() {
+		
+		super();
+		
+	}
+
+}

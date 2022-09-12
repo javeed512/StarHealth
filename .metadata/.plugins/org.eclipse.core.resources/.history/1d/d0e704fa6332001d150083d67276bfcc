@@ -1,0 +1,33 @@
+package com.starhealth.variables;
+// local variables are variables declare inside block or declare as parameters
+
+public class LocalVariables {
+
+	public static void main(String[] args) {
+
+			int rollNo = 10;
+			
+			System.out.println(rollNo);
+		
+			System.out.println(args.length);
+
+		if() {
+			
+			
+		}
+		
+		
+		while() {
+			
+			
+		}
+		
+	}
+	
+	public int add() {
+		
+		
+		
+	}
+
+}

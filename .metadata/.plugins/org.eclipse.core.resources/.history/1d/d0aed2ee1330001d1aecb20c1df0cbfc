@@ -1,0 +1,19 @@
+package mypackage;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+			int x = 33;
+			int rollNo =99;
+			String name = "Javeed";
+		
+		
+			System.out.println("Hello World!");
+			System.out.println("Javeed");
+			
+			System.out.println(x);
+
+	}
+
+}

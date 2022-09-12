@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+E:\StarHealth_CoreJava\.metadata\.plugins\org.eclipse.jdt.core
+1345302021.index
+1522632048.index

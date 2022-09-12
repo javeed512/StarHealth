@@ -1,0 +1,91 @@
+Java Lang:
+----------
+
+
+Electronic Devices:
+--------------------
+
+Programming Lang: 
+COBAL , PASCAL , ASSM ---> LOW LEVEL LANG
+ADD A,B 
+MOVE A TO X
+---------------------------------
+C-Lang : Denis Rechie
+High Level Lang:
+English
+
+Ex: Java , Python , C# , Go-Lang , Ruby etc
+
+What is Program?
+Set of Instructions , which is written in High Level Lang like C, Java , C++ ,Python etc
+
+Processor: 
+
+int x;  ---> compiler --> binary code ---> O.S / JVM
+
+
+Software: Set of programs
+
+Desktop / stand-alone app :
+These application or software need to install in our devices and
+we can access them offline.
+Ex: notepad ,paint , MS-office , O.S , Browser , Calendar ,calculator.
+
+Web Application:
+Web sites or online apps:
+We need not to install them in our machine , web applications will be
+running on online servers and we can access them using browser on internet.
+Ex: Google , Olympus , Flipkart, Youtube,Facebook , University, Govt sites
+
+Mobile Applications:
+
+
+Java Language:
+Object Oriented Concepts 
+James Gosling and Team (Sunmicro-system)
+Oracle Corporation
+
+Cloud - Spring Boot 
+AWS
+Blockchain
+Salesforce
+Android
+ML , AI
+pega 
+Jenkins,Jira , Sonar
+
+Java Features:
+---------------
+1.OOPs lang
+2.Multi-threading
+3.JSE , JEE , JME(Android)
+Java Standard Edition (core java) console/stand-alone app
+Java Enterprise Edition (adv java) web apps / web sites
+Java Mobile Edition (electronic devices)
+
+4.More than 3 Billion devices are running on java
+5.Platform Independent
+6. Write once , run every where
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

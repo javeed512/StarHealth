@@ -1,0 +1,31 @@
+package com.starhealth.datatypes.primitive;
+
+import java.lang.*; // default package
+
+public class PrimitiveDataTypes extends Object {
+
+	public static void main(String[] args) {
+
+		String s =	new String("Javeed");
+		
+		int len =	s.length();
+		
+		System.out.println(len);
+		
+		
+			byte b = 101;
+			
+			int n = 123;
+			
+				
+		
+		
+		
+		
+		
+		System.out.println("Welcome Back");
+
+	}
+
+}
+

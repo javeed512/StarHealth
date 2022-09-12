@@ -1,0 +1,44 @@
+package com.instance;
+
+public class Student extends Object {
+
+// Data hiding	
+	private int sid; // 0
+	private String sname; // null
+	private double fee; // 0.0
+
+	public Student() {
+
+		super();
+
+	}
+
+	public Student(int sid, String sname, double fee) {
+		
+		this.sid = sid;
+		this.sname = sname;
+
+		this.fee = fee;
+
+	}
+	
+	
+	public int  getSid() {
+		
+		return this.sid;
+		
+	}
+	
+	public  String  getSname() {
+		
+		return this.sname;
+		
+	}
+	
+	public double getFee() {
+		
+		
+		return this.fee;
+	}
+
+}

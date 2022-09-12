@@ -1,0 +1,13 @@
+package com.instance;
+
+public class Student {
+	
+	
+	int sid;   // 0
+	String sname;  // null
+	double  fee;  // 0.0
+	
+	
+	
+
+}

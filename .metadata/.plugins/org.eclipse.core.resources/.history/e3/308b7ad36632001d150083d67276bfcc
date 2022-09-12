@@ -1,0 +1,18 @@
+package com.starhealth.variables;
+
+public class Employee {
+	
+	int eid;
+	String ename;
+	
+
+	public static void main(String[] args) {
+		
+		Employee  e1 =		new  Employee();
+
+			System.out.println(eid);
+			System.out.println(ename);
+
+	}
+
+}

@@ -1,0 +1,65 @@
+
+static ---> static  	 yes
+static ---> non-static  yes
+non-static ---> non-static  yes
+non-static  ---> static   No (only using ref/obj)
+
+
+Access Modifiers
+
+private --> with in a program
+default --> with in a package
+public  --> universal
+protected  --> confusing access modifier
+
+	i. it act as default
+	ii. public
+package1;
+
+class A {
+
+	protected int x;
+
+
+}
+
+classs B{ }
+class C{ }
+
+---------------------
+
+package2;
+
+class D extends A{
+
+	x; possible
+
+}
+
+
+class E extends D{
+
+	x; not possible
+
+}
+
+
+
+
+============================================
+
+com.instance.Student@abe1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
