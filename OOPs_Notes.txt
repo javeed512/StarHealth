@@ -1,0 +1,188 @@
+OOPs:
+=====
+1. Class and Object
+2. Inheritance
+3. Polymorphism
+4. Encapsulation
+5. Abstraction
+
+Class: 
+->Its a Blue Print from which Objects/Instances will be created.
+->Class is an imaginary or logical entity.
+->Class is a collection of objects.
+->Class is reusable Component in java.
+
+
+
+
+public class Object{
+
+
+
+}
+
+public class  Employee extends Object{
+
+
+}
+
+Ex: Object , String , Integer , Double , Boolean 
+
+Students , Employee , Train , Products , Vegetables , Fruits
+
+
+Object/Instance:
+=================
+-> Objects are instances of class
+-> Objects are physical entities , which exist in real world.
+
+
+public class String{
+
+
+	public String(){
+
+	}
+
+	public String(String str){
+	
+
+	}
+
+
+}
+
+ String s1 = new String();
+
+
+============================================
+
+Inheritance (OR) IS-A Relationship
+
+->In Java when one class derive properties of another class , this concept known as inhertance.
+-> We can have single level inheritance from which we can make , multi level inheritance also.
+-> In Java Multiple Inheritance for classes is not possisble. But it is possible for Interfaces
+public class Object{
+
+	public Object(){
+
+		// creating object
+		// memory allocation in heap
+		// creating seperate copy of instance vars
+		// generating hashcode
+		
+	}
+
+
+	String toString(){
+
+	}
+	
+	hashcode(){ }
+	equals(){ }
+	
+	wait();
+	notify();
+	notifyAll();
+
+
+}
+
+
+public class Manager extends Object{
+
+
+
+}
+
+
+public class  Employee extends Manager{
+
+
+
+
+}
+
+
+Employee e1;
+-----------------------------------------------
+
+Polymorphism:
+============
+Poly - many
+morphism - forms
+
+Javeed - Trainer, Son , Customer , Friend
+
+class - String 
+Datatype 
+String s1 = new String();
+
+char c = 'A';
+
+c =(char) 65;
+
+sysout(c);
+
+Runtime Polymorphism:
+---------------------
+Object o = new Child();
+
+
+Polymorphism
+1.Static/Compiletime Polymorphism
+
+Ex:- Overloading
+methodoverloading , construtor overloading
+
+ 
+2.Dynamic/Runtime Polymorphism
+
+Superclass reference variable holding sub class objects
+
+Ex1: Object o = new Child();
+
+Ex2:  method-overriding
+->method overriding take place between parent class to child class
+-> in this method and and parameters will be same but logic/definition will be different
+
+
+
+
+
+SDLC:
+
+1. Requirment Gathering (BA)
+2. Analyse and Design phase
+	Interfaces, UML Diagram , ER-Diagram, Databases,Test Cases , Techs
+
+3. Implementation coding
+	Unit Testing
+4. Integration TEsting
+5. Deployment 
+6. Maintenance
+
+
+
+
+
+
+Abstraction:
+Highlighting set of services to the users and hiding implementation code.
+
+Abstraction using Interfaces and Classes (Abstract class or concrete class)
+
+Interface:
+End User: Set of services highlighted to the user.
+Developer: Specification or Requirement , which developers need to implement.
+
+
+IBank  b = new BankTwoIMp();
+
+
+Any Interface can hold its implementation class objects in Java.
+
+
+
+
+
