@@ -1,0 +1,240 @@
+Multiple Inheritance:
+======================
+
+Inheritance:
+Class: In Java  a class can extends only One Class.
+Interface: In Java an interface can extends multiple interfaces as parent.
+
+
+interface I1{
+
+public abstract void m1();
+
+}
+
+
+interface I2 {
+
+public abstract void m2();
+
+}
+
+
+interface I3  extends I1 , I2{
+
+public abstract void m3();
+
+}
+
+
+
+class  Demo  implements I1 , I2 , I3{
+
+	void m1(){
+		//logic
+		}
+	void m2(){
+		//logic
+		}
+	void m3(){
+		//logic
+		}
+
+
+}
+
+class  Test  implements I3{
+
+
+	void m1(){
+		//logic
+		}
+	void m2(){
+		//logic
+		}
+
+	void m3(){
+		//logic
+		}
+
+
+}
+
+
+
+
+
+
+
+
+Java Library:
+
+java.lang.*;
+
+Object
+String
+StringBuffer
+StringBuilder
+System
+
+WrapperClasses
+Ex: Byte,Short,Integer,Character,Boolean,Long,Double,Float
+
+java.util.*;
+Scanner class
+Date class
+
+
+java.time.*;
+Date and Time Classes
+
+
+
+
+Object:
+Object is a super most class/1st class in Java ,every class extends or inherite properties from Object class.
+
+only default constructor Object class.
+
+public Object(){
+
+	// generating hashcode
+	// memory allocation
+	// creating copy of instance var
+	// other logics
+
+
+}
+
+methods:
+--------
+toString()
+1. For displaying hashcode of an object
+2. To convert any object into String type.
+
+Example
+reference /object data type converting to String
+
+Integer n = new Integer(99);
+			
+String s = n.toString();  // s = "99"
+-----------------------------------------------
+primitive data type converting to String
+
+int eid =99;
+String s1 = eid+"";
+
+finalize():
+
+JVM wants clean unused or unreference object from memory , JVM ---> finalize(); ---> System.gc();
+
+wait() , notify() , notifyAll();
+
+getClass();
+
+hashcode()  
+Get the unique hashcode for object in integer format
+
+
+equals()
+equals() method from Object , compares references/hashcode  of 2 objects
+
+=================================================
+
+String class
+
+String class is used to  handle string data 
+
+"abcd" , "abd2345" , "hello" , "ad$^*("
+
+
+char ch[6] = {'j','a','v','a'}; 
+
+String str = "java";
+
+Note: String class objects are Immutable in nature.
+
+String class equals() compares values not hashcode , and we cannot call object class equals() using string ref.
+
+
+ 
+----------------------------
+StringBuffer
+This class is mutable in nature.
+
+append();
+reverse();
+
+--------------------
+Wrapper classes
+Integer,Long,Double,Float,Boolean,Character,Byte,Short
+
+
+new Integer(12);
+new Integer("1234");
+
+new Double(4.55);
+new Double("9.999");
+
+String  s1 = "1234";
+
+parseXXX();
+toString();
+hashcode();
+
+int i = parseInt(s1);
+
+-----------------------------
+Inputs from keyboard
+1. command line args maing(String args[])
+2. Scanner
+3. BufferReader
+
+
+java.time.*;
+----------------
+In Java8 version , java.time package is introduce.
+
+LocalDate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
