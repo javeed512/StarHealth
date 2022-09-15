@@ -1,0 +1,152 @@
+Exceptions:
+------------
+Unexpected output at runtime which terminates program abnormally.
+
+throws - throws exception from callee to the caller
+
+
+try-catch  -> handle expceptions in java
+
+finally -> inside this code will get execute always
+
+throw -> it is used to throw any exception manually / explicitly.
+
+
+	throw new ArithmeticExp();
+
+throw new LowBalanceException (); --> exception raise/occur
+try{
+//hanlde above exp
+
+}catch(){
+
+// plz deposit some amount your balance is low
+
+}
+
+
+
+1.Checked Exception / CompileTime Exception
+
+Checked Exceptions are exceptions which can be detect or predict by Compiler.
+
+Ex:Wearing Helmet,Carrying Umbrella , TakeTwoPens
+FileNotFoundExpception,SQLException
+
+
+
+2.UnChecked Exception / Runtime Exception
+UnChecked Exceptions are exceptions which cannot be detect or predict by Compiler.
+We will know about Runtime Exp only when they occur.
+Ex: Floods, ArithmeticException ,NullPointerException
+
+
+Note: RuntimeException class is the parent of all unchecked exceptions in Java.
+
+
+
+
+try{
+
+// risky code
+
+}catch(){
+// handle exp1
+
+}catch(){
+
+//handle exp2
+}
+finally{
+
+// very imp code which mandatory to be execute
+
+}
+
+
+
+
+
+
+
+-------------------------------------
+
+Multi-Threading:
+=================
+
+Thread is a piece of code or part of program.
+
+We can implement threads in 2 ways.
+1. By Extending Thread class
+2. By Implementing Runnable Interface.
+
+
+
+java.lang.*;
+
+interface  Runnable{
+
+
+	public void run();
+
+
+
+}
+
+class  Thread  implements Runnable{
+
+	// overloaded constructors
+
+	public void run(){
+		// empty
+	}
+
+	start(){
+
+		// logics
+
+		// memory allocation
+		// cpu time scheduler
+		// set priority 
+
+		// internally call run(); 
+
+	}
+
+	setName(); getName();
+	setPriority(); getPriority();
+	currentThread();
+	sleep();
+	join();	
+	yield();
+	
+
+
+
+}
+
+
+
+-------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
