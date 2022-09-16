@@ -129,7 +129,11 @@ class  Thread  implements Runnable{
 
 -------------------------------
 
-
+1. From SCM git install git client / create github account
+2. Install Mysql Database 8.0
+3. Practice join,sleep,yield methods and  wait() , notify() , notifyAll()
+4. Practice Collections  List and Set Family
+5. Revise OOPs,Exception Hanlding, Java Library
 
 
 

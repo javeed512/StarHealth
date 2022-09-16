@@ -1,0 +1,53 @@
+Collection is an API / Collection Framwork
+given as  java.util.*; pakage
+
+
+Collection: If we want to represent a group of objects as single entity then we should go for
+collections
+
+
+java.util.*;
+
+interfaces:
+------------
+
+Collection (I)
+
+List(I)
+Set(I)
+Map(I)
+Queue(I)
+Comparator(I)
+Iterator(I)
+
+
+Implementation Classes:
+------------------------
+ArrayList
+LinkedList
+Vector
+Stack
+
+
+
+HashSet
+LinkedHashSet
+TreeSet
+
+
+HashMap
+LinkedHashMap
+TreeMap
+
+Properties class
+Hashtable class
+
+
+
+------------------------
+
+List list= new ArrayList();
+
+
+
+
