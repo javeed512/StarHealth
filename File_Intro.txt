@@ -1,0 +1,42 @@
+
+java.io.*;  package
+
+PrintStream 
+
+FileReader / FileInputStream 
+FileWriter
+
+ObjectInputStream
+ObjectOutputStream
+
+BufferedReader
+
+InputStreamReader
+
+----------------------
+
+class PrintStream {
+
+
+	print(){  .... }
+
+	println(){........}
+
+}
+
+
+
+
+
+class System{   // util class
+
+static InputStream in;
+static PrintStream out = new PrintStream();
+static PrintStream err;
+
+
+gc();
+
+}
+
+System.out.println("hello");
