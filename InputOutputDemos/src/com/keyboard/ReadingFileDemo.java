@@ -2,6 +2,7 @@ package com.keyboard;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class ReadingFileDemo {
@@ -12,9 +13,14 @@ public class ReadingFileDemo {
 		try {
 			FileReader reader = new FileReader("input.txt");
 			
+			FileWriter  writer = new FileWriter("output.txt");
 			
 			int n =0;
 			while((n =	reader.read()) != -1 ) {
+				
+						writer.write(n);
+						
+						writer.flush();
 				
 				System.out.print((char)n);
 				

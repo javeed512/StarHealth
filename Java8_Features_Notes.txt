@@ -1,0 +1,131 @@
+
+Java8 Features:
+---------------
+
+1.java.time.*; package
+2.Functional Interface 
+ -> Static and Default methods
+3.Lambda Expression
+4.Method Reference
+5. Stream API
+
+
+Fuctional Interface:
+Its an interface which can have one and only one abstract method , and implementation will be done by using
+Lambda Expression.
+
+-> Lambda Expression is the implementation of any Functional Interface from Java8.
+syn: () -> {};
+Return type for any Lambda expression is Functional Interface type.
+
+Types of Functional Interfaces:
+===============================
+1.Consumer Functional Interface
+
+void methodName(int i); // void setEName(String name);
+
+2.Supplier Functional Interface
+
+int  methodName(); // int getSalary();
+boolean methodName(); // boolean supplier
+
+3.Predicate Funtional Interface
+
+boolean methodName(long); // boolean isValid(String name);
+
+
+4.Function Fuctional Interface
+
+
+int  methodName(String name);
+
+int findLength(String name);
+
+
+
+------------------------------------------
+
+Java9 - JShell
+
+----------------------------------------
+
+Java Stream API:
+================
+Stream : Flow of Data
+
+java.util.stream.*;
+
+Stream Interface
+
+Data can be inside
+Arrays
+Collections
+
+
+
+
+
+
+
+
+
+
+
+class Address{
+
+String city;
+
+}
+---------------------
+
+class Employee {
+
+int eid;
+String ename;
+Address address;
+
+//setter and getters
+
+}
+----------------------
+Early/Eager Loading
+
+Employee e1 = new Employee(); --> new Address(); // always
+
+
+
+
+Lazy Loading
+---------------
+Employee e1 = new Employee();
+
+Address a1 = new Address(); // on demand
+
+
+
+
+
+Optional<T> 
+
+Optional return types used in java which return the expected value , if expected values is not return then
+some default value can be return by us using optional.
+
+
+ Optional<String> getName(){
+
+		//return "Javeed";  // either this
+
+
+		return "Sorry";  // or this
+}
+
+
+
+
+
+
+
+
+
+
+
