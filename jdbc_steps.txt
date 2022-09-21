@@ -1,0 +1,81 @@
+
+JDBC:
+-----
+Java Database Connectivity
+
+
+JDBC in 4 Types
+1. Type1 Driver
+
+Used Native functions/ c-lang which makes application platform dependent
+2. Type2 Driver
+3. Type3 Driver
+4. Type4 Driver / Thin
+
+
+
+
+
+
+
+
+
+
+
+
+JDBC is an API
+
+java.sql.*;
+
+Interfaces
+-----------
+Driver
+Connection
+Statement
+PreparedStatement
+CallableStatement
+ResultSet
+
+Classes
+--------
+DriverManager 
+Date 
+
+
+JDBC Steps:
+--------------
+step1. Register  Driver class or Load Your Driver class
+
+step2. Get the Connection using DriverManager class
+
+step3. Create any Statement as per requirements.
+Statement OR  PreparedStatement OR CallableStatement
+
+step4. Execute Query (select or non-select query)
+Select Query use executeQuery()   method
+Non-Select query use  executeUpate()  method
+
+step5. close the connection
+
+
+
+
+IP-ADDRESS:
+----------
+Its an unique identity or number given to every machine , it is use to identify machines on networks
+Ex:  1.27.0.129 , 23.77.99.12
+
+PORT NO.
+---------
+Unique number given to every application in a machine.
+
+8080 , 9090 , 0000 - 9999
+
+3306- mysql port
+
+
+
+
+
+
+

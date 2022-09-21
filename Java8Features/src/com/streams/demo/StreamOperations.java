@@ -3,6 +3,8 @@ package com.streams.demo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamOperations {
@@ -43,26 +45,38 @@ public class StreamOperations {
 			
 			  salaries2.add(30000); salaries2.add(50000); salaries2.add(20000);
 			  salaries2.add(40000); salaries2.add(10000); salaries2.add(60000);
+			  salaries2.add(30000); salaries2.add(10000); salaries2.add(20000);
 	 		
 		Stream<Integer> stream2 =	  salaries2.stream();
-			  
-			  
-		Optional<Integer> op =	stream2.reduce((s1,s2)->{return s1+s2;});
+			
 		
-			if(op.isPresent()) {
-				
-				
-					System.out.println("Sum of Salaries "+op.get());
-				
-			}
+			//stream2.distinct().skip(4).forEach(System.out::println);
 		
-			else {
-				
-				
-				System.out.println(op.get());
-				
-			}
-
+	//	long count =	stream2.count();
+		
+			//System.out.println(count);
+		
+		Set<Integer>  set =	stream2.collect(Collectors.toSet());
+		
+				System.out.println(set);
+			  
+		/*
+		 * Optional<Integer> op = stream2.reduce((s1,s2)->{return s1+s2;});
+		 * 
+		 * if(op.isPresent()) {
+		 * 
+		 * 
+		 * System.out.println("Sum of Salaries "+op.get());
+		 * 
+		 * }
+		 * 
+		 * else {
+		 * 
+		 * 
+		 * System.out.println(op.get());
+		 * 
+		 * }
+		 */
 	}
 
 }

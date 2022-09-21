@@ -1,0 +1,347 @@
+
+Database:
+---------
+Database are digital storages where data will be stored in tabular format.
+
+Database Softwares/Server
+Ex: Oracle , Mysql , DB2 , H2 DB, MS SQL,Postgres DB etc..
+
+NoSQL Databases which stores data in files/documents in JSON Format.
+EX: MongoDB,Casata,Dynamo DB
+
+SQL: Structural Query lang
+--------------------------- 
+SQL is a Query lang to interact with All SQL Databases.
+
+DDL: Data Definition Lang
+CREATE , ALTER , DROP , TRUNCATE 
+
+->When ever we want to work with Table Structure we can use DDL commands
+
+Constraints:
+===========
+PRIMARY KEY = NOT NULL + UNIQUE
+FOREING KEY  // use to refer parent table from child table
+NOT NULL
+UNIQUE
+
+
+
+
+mysql database:
+---------------
+Datatypes
+int , decimal , varchar, char , boolean , date , datetime 
+
+
+SQL Queries:
+------------
+Create Database
+-> CREATE DATABASE  database_name;
+-> show databases; // show all  existing databases
+-> use  database_name;  // switch to any database using use command
+
+Create Table:
+
+CREATE TABLE  Employee(eid integer(3)  primary key, ename varchar(20) ,salary decimal(7,2) , job varchar(12) , doj date);
+
+
+DROP TABLE employee;
+
+ALTER --> Add,Modify,Drop
+
+ALTER TABLE Employee  Add(comm  integer(5));
+
+ALTER TABLE Employee  Modify job  varchar(20);
+
+ALTER TABLE Employee Drop column   column_name;
+
+------------------------------------------
+
+TRUNCATE TABLE Employee;  // it will trunc/ delete all records from Employee table
+
+-----------------------------------------
+
+
+
+DML: Data Manipulation Lang
+INSERT , UPDATE , DELETE
+-> When ever we want to work with table data we can use DML commands
+
+
+
+INSERT - insert new records into the tables
+
+->INSERT INTO EMPLOYEE values(101,'King',50000.00,'President','2001-01-26',null);
+
+UPDATE - update existing records in tables
+
+-> update employee set salary = 30000 , comm = 500 where eid = 101;
+
+DELETE - to remove/delete records from the tables
+
+-> delete from employee where eid = 101;
+
+============================================================
+
+
+DQL/DRL : Data Retrieval lang
+
+SELECT
+-> Selecting/Fetching Data from tables
+
+
+select all
+-> select * from employee;
+-> select eid,ename,salary from employee;
+
+
+
+mysql> select * from employee;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 101 | King  | 50000.00 | President | 2001-01-26 | NULL |
+| 102 | Tom   | 40000.00 | Manager   | 2001-12-01 |  500 |
+| 103 | Smith | 35000.00 | Developer | 2022-09-21 | 1500 |
+| 104 | Jerry | 30000.00 | Tester    | 2022-09-20 | 2000 |
++-----+-------+----------+-----------+------------+------+
+4 rows in set (0.00 sec)
+
+mysql> select eid ,ename,salary from employee;
++-----+-------+----------+
+| eid | ename | salary   |
++-----+-------+----------+
+| 101 | King  | 50000.00 |
+| 102 | Tom   | 40000.00 |
+| 103 | Smith | 35000.00 |
+| 104 | Jerry | 30000.00 |
++-----+-------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from employee where  ename = 'Tom';
++-----+-------+----------+---------+------------+------+
+| eid | ename | salary   | job     | doj        | comm |
++-----+-------+----------+---------+------------+------+
+| 102 | Tom   | 40000.00 | Manager | 2001-12-01 |  500 |
++-----+-------+----------+---------+------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee where  salary > 30000;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 101 | King  | 50000.00 | President | 2001-01-26 | NULL |
+| 102 | Tom   | 40000.00 | Manager   | 2001-12-01 |  500 |
+| 103 | Smith | 35000.00 | Developer | 2022-09-21 | 1500 |
++-----+-------+----------+-----------+------------+------+
+3 rows in set (0.00 sec)
+
+mysql> select * from employee where  salary < 30000;
+Empty set (0.00 sec)
+
+mysql> select * from employee where  salary < 40000;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 103 | Smith | 35000.00 | Developer | 2022-09-21 | 1500 |
+| 104 | Jerry | 30000.00 | Tester    | 2022-09-20 | 2000 |
++-----+-------+----------+-----------+------------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employee where  salary > 30000  AND job = 'Manager';
++-----+-------+----------+---------+------------+------+
+| eid | ename | salary   | job     | doj        | comm |
++-----+-------+----------+---------+------------+------+
+| 102 | Tom   | 40000.00 | Manager | 2001-12-01 |  500 |
++-----+-------+----------+---------+------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee where  salary = 30000 or salary = 50000;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 101 | King  | 50000.00 | President | 2001-01-26 | NULL |
+| 104 | Jerry | 30000.00 | Tester    | 2022-09-20 | 2000 |
++-----+-------+----------+-----------+------------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employee where  salary > 30000  OR  job = 'Tester';
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 101 | King  | 50000.00 | President | 2001-01-26 | NULL |
+| 102 | Tom   | 40000.00 | Manager   | 2001-12-01 |  500 |
+| 103 | Smith | 35000.00 | Developer | 2022-09-21 | 1500 |
+| 104 | Jerry | 30000.00 | Tester    | 2022-09-20 | 2000 |
++-----+-------+----------+-----------+------------+------+
+4 rows in set (0.00 sec)
+
+
+
+=======================================================================
+
+
+HOW TO HANDLE NULL VALUES using IFNULL functions
+
+mysql> SELECT  ENAME, SALARY + COMM   FROM EMPLOYEE;
++-------+---------------+
+| ENAME | SALARY + COMM |
++-------+---------------+
+| King  |          NULL |
+| Tom   |      40500.00 |
+| Smith |      36500.00 |
+| Jerry |      32000.00 |
++-------+---------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT  ENAME, SALARY + IFNULL(COMM,0)   FROM EMPLOYEE;
++-------+-------------------------+
+| ENAME | SALARY + IFNULL(COMM,0) |
++-------+-------------------------+
+| King  |                50000.00 |
+| Tom   |                40500.00 |
+| Smith |                36500.00 |
+| Jerry |                32000.00 |
++-------+-------------------------+
+4 rows in set (0.00 sec)
+
+
+HOW TO COMPARE NULL VALUE
+
+mysql> select * from employee  where comm = null;
+Empty set (0.00 sec)
+
+mysql> select * from employee  where comm  IS null;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 101 | King  | 50000.00 | President | 2001-01-26 | NULL |
++-----+-------+----------+-----------+------------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee  where comm  IS NOT null;
++-----+-------+----------+-----------+------------+------+
+| eid | ename | salary   | job       | doj        | comm |
++-----+-------+----------+-----------+------------+------+
+| 102 | Tom   | 40000.00 | Manager   | 2001-12-01 |  500 |
+| 103 | Smith | 35000.00 | Developer | 2022-09-21 | 1500 |
+| 104 | Jerry | 30000.00 | Tester    | 2022-09-20 | 2000 |
++-----+-------+----------+-----------+------------+------+
+3 rows in set (0.00 sec)
+
+
+
+
+Aggregate functions / Group functions:
+=====================================
+SUM
+MIN
+MAX
+AVG
+COUNT
+
+
+-----------------------------------------------------
+mysql> select min(salary) from employee;
++-------------+
+| min(salary) |
++-------------+
+|    30000.00 |
++-------------+
+1 row in set (0.02 sec)
+
+mysql> select min(salary) as Result from employee;
++----------+
+| Result   |
++----------+
+| 30000.00 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select mAX(salary) as Result from employee;
++----------+
+| Result   |
++----------+
+| 50000.00 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select SUM(salary) as Result from employee;
++-----------+
+| Result    |
++-----------+
+| 155000.00 |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select count(salary) as Result from employee;
++--------+
+| Result |
++--------+
+|      4 |
++--------+
+1 row in set (0.02 sec)
+
+mysql> select count(comm) as Result from employee;
++--------+
+| Result |
++--------+
+|      3 |
++--------+
+1 row in set (0.00 sec)
+
+mysql> select sum(comm) as Result from employee;
++--------+
+| Result |
++--------+
+|   4000 |
++--------+
+1 row in set (0.00 sec)
+
+
+
+
+
+======================================================
+
+
+TCL: Transaction Control Lang
+COMMIT , ROLLBACK
+
+always do handle transaction by yourself
+
+start transaction;
+
+
+commit;
+rollback;
+
+
+Ex: 
+start transaction
+insert 1 record
+update 1 record
+delete 1 record
+select records
+
+commit;  // 1st transaction 
+
+CRUD Operations- create,retrieve,update,delete
+
+
+
+
+
+
+
+
+ 
+	
+
+
+
+
+
+
+ 
