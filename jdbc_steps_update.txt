@@ -1,0 +1,120 @@
+
+JDBC:
+-----
+Java Database Connectivity
+
+
+JDBC in 4 Types
+1. Type1 Driver
+
+Used Native functions/ c-lang which makes application platform dependent
+2. Type2 Driver
+3. Type3 Driver
+4. Type4 Driver / Thin
+
+
+
+
+
+
+
+
+
+
+
+
+JDBC is an API
+
+java.sql.*;
+
+Interfaces
+-----------
+Driver
+Connection
+Statement
+PreparedStatement
+CallableStatement
+ResultSet
+
+Classes
+--------
+DriverManager 
+Date 
+
+
+JDBC Steps:
+--------------
+step1. Register  Driver class or Load Your Driver class
+
+step2. Get the Connection using DriverManager class
+
+step3. Create any Statement as per requirements.
+Statement OR  PreparedStatement OR CallableStatement
+
+step4. Execute Query (select or non-select query)
+Select Query use executeQuery()   method
+Non-Select query use  executeUpate()  method
+
+step5. close the connection
+
+
+
+
+IP-ADDRESS:
+----------
+Its an unique identity or number given to every machine , it is use to identify machines on networks
+Ex:  1.27.0.129 , 23.77.99.12
+
+PORT NO.
+---------
+Unique number given to every application in a machine.
+
+8080 , 9090 , 0000 - 9999
+
+3306- mysql port
+
+
+
+
+Note: Step-1 in JDBC can be replace with Class.forName("com.mysql.cj.jdbc.Driver");// load register class
+But remember step1 in jdbc is optional , we can run jdbc without registerDriver() and without Class.forName();
+
+ JDBC Statements:
+------------------
+1. Statement
+Statement is used for executing Static Queries , 
+Any query which does not have inputs/parameters known as Static Query.
+Ex: Select * from Employee;
+Ex: Create table Product(pid int,pname varchar(12));
+
+Use Statement for Static Select queries and for DDL(CREATE,ALTER,DROP ,TRUNCATE)
+
+
+
+
+
+2. PreparedStatement
+It is used for dynamic queries as well as use for static queries.
+It uses input parameter concepts known as Positional params (?)
+
+insert into employee(eid,ename,salary,job,doj,comm) values(?,?,?,?,current_date,?)
+
+update employee set ename = ? , salary =? , job =?, doj =? , comm =? where eid =?;
+
+
+select * from employee where eid =?;
+
+delete from employee  where eid =?;
+
+
+select * from employee;
+
+
+
+
+
+
+
+
+
+
